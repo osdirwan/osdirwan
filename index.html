@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kuis Interaktif</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Kuis Interaktif</h1>
+
+    <div id="identitas">
+      <input type="text" id="nama" placeholder="Nama Lengkap" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <button onclick="mulaiKuis()">Mulai Kuis</button>
+    </div>
+
+    <div id="kuis" style="display:none;">
+      <form id="kuisForm"></form>
+      <button onclick="submitKuis()">Kirim Jawaban</button>
+    </div>
+
+    <div id="hasil" style="display:none;"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
